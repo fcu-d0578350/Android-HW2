@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:showIn="@layout/activity_main"
-    tools:context="com.example.hong.homework2.com.example.MainActivity">
+    tools:context="com.example.hong.homework2.com.example.HelloActivity"
+    tools:showIn="@layout/activity_hello">
 
     <LinearLayout
         android:layout_width="368dp"
@@ -17,17 +16,16 @@
         tools:layout_editor_absoluteY="8dp">
 
         <TextView
-            android:id="@+id/Name"
+            android:id="@+id/Greeting"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text=" Name" />
+            android:text="Greeting" />
 
-        <EditText
-            android:id="@+id/EditText"
+        <TextView
+            android:id="@+id/Show"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName" />
+            android:text="TextView" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -38,18 +36,14 @@
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:text="TextView" />
 
             <Button
-                android:id="@+id/Button"
-
+                android:id="@+id/back"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.09"
-                android:elevation="0dp"
-                android:text="SAY HELLO"
-                tools:layout_editor_absoluteX="43dp"
-                tools:layout_editor_absoluteY="215dp" />
+                android:text="Button" />
         </LinearLayout>
 
     </LinearLayout>
